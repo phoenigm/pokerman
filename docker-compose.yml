@@ -2,30 +2,30 @@ version: '3'
 
 services:
 
-  template-app:
-    container_name: template-app
+  poker-chpoker:
+    container_name: poker-chpoker
     restart: always
     build:
-      context: ./template-app
-    hostname: template-app
+      context: ./poker-chpoker
+    hostname: poker-chpoker
     ports:
       - 20000:20000
     networks:
       - backend
 
-  db-template-app:
-    container_name: template-app
+  db-poker-chpoker:
+    container_name: poker-chpoker
     restart: always
     image: postgres:12.2-alpine
-    hostname: template-app
+    hostname: poker-chpoker
     volumes:
-      - db-template-app:/var/lib/postgresql/data:delegated
+      - db-poker-chpoker:/var/lib/postgresql/data:delegated
     ports:
       - 5432:5432
     environment:
-      - POSTGRES_USER=template-app
-      - POSTGRES_PASSWORD=template-app
-      - POSTGRES_DB=template-app
+      - POSTGRES_USER=poker-chpoker
+      - POSTGRES_PASSWORD=poker-chpoker
+      - POSTGRES_DB=poker-chpoker
     networks:
       - backend
 
@@ -34,4 +34,4 @@ networks:
   frontend:
 
 volumes:
-  db-template-app:
+  db-poker-chpoker:

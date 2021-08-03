@@ -1,11 +1,11 @@
-package com.example.demo
+package ru.phoenigm.chpoker
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-open class DemoApplication
+open class ChpokerApplication
 
 fun main(args: Array<String>) {
-    runApplication<DemoApplication>(*args)
+    runApplication<ChpokerApplication>(*args)
 }
