@@ -2,7 +2,7 @@ package ru.phoenigm.pokerman.holdem.interactor
 
 import org.junit.jupiter.api.Test
 
-import ru.phoenigm.pokerman.holdem.domain.Player
+import ru.phoenigm.pokerman.core.domain.Player
 
 internal class PlayGameUseCaseTest {
 

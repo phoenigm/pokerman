@@ -1,11 +1,11 @@
 package ru.phoenigm.pokerman.holdem.interactor
 
-import ru.phoenigm.pokerman.holdem.domain.*
-import ru.phoenigm.pokerman.holdem.service.CardDeckShuffleMachine
-import ru.phoenigm.pokerman.holdem.service.CombinationDeterminer
-import ru.phoenigm.pokerman.holdem.service.WinnerDeterminer
-import ru.phoenigm.pokerman.holdem.service.factory.CardDeckFactory
-import ru.phoenigm.pokerman.holdem.service.shuffle.SattoloDeckShuffleAlgorithm
+import ru.phoenigm.pokerman.core.domain.*
+import ru.phoenigm.pokerman.core.rules.CardDeckShuffleMachine
+import ru.phoenigm.pokerman.core.rules.CombinationDeterminer
+import ru.phoenigm.pokerman.core.rules.WinnerDeterminer
+import ru.phoenigm.pokerman.core.rules.factory.CardDeckFactory
+import ru.phoenigm.pokerman.core.rules.shuffle.SattoloDeckShuffleAlgorithm
 
 class PlayGameUseCase {
     private val cardDeskShuffleMachine = CardDeckShuffleMachine(SattoloDeckShuffleAlgorithm())
