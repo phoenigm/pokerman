@@ -19,5 +19,17 @@ enum class CardSuit {
     /**
      * Крести
      */
-    CLUBS
+    CLUBS;
+
+    companion object {
+        private val values: Array<CardSuit> = values()
+
+        fun getByOrdinal(ordinal: Int): CardSuit = values[ordinal]
+    }
+
+    override fun toString(): String {
+        val suitSymbols = listOf("♦", "♥", "♠", "♣")
+        return suitSymbols[this.ordinal]
+    }
+
 }

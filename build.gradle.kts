@@ -19,7 +19,7 @@ plugins {
 }
 
 subprojects {
-    group = "com.example.template"
+    group = "ru.phoenigm.chpoker"
 
     repositories {
         mavenCentral()

@@ -5,7 +5,7 @@ import ru.phoenigm.chpoker.domain.CardDeck
 class SattoloDeckShuffleAlgorithm : DeckShuffleAlgorithm {
 
     override fun shuffle(deck: CardDeck): CardDeck {
-        return deck
+        return CardDeck(mutableListOf(*deck.cards.shuffled().toTypedArray()))
     }
 
 }
