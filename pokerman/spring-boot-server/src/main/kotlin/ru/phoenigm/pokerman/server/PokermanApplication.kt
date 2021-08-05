@@ -1,11 +1,11 @@
-package ru.phoenigm.pokerman
+package ru.phoenigm.pokerman.server
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-open class ChpokerApplication
+open class PokermanApplication
 
 fun main(args: Array<String>) {
-    runApplication<ChpokerApplication>(*args)
+    runApplication<PokermanApplication>(*args)
 }
