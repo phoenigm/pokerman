@@ -1,3 +1,3 @@
-# Spring Boot Kotlin Gradle template
+# Pokerman
 
-Start your Spring Boot application with this template
+Texas Holdem poker

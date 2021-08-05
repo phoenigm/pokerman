@@ -12,6 +12,7 @@ object Vers {
     const val jaxb = "2.3.1"
     const val swagger = "3.0.0"
 
+    const val junit = "5.7.2"
 }
 
 object Libs {
@@ -24,6 +25,9 @@ object Libs {
     const val springConfigProcessor = "org.springframework.boot:spring-boot-configuration-processor:${Vers.springBoot}"
 
     const val springTest = "org.springframework.boot:spring-boot-starter-test:${Vers.springBoot}"
+    const val junitApi = "org.junit.jupiter:junit-jupiter-api:${Vers.junit}"
+    const val junitEngine = "org.junit.jupiter:junit-jupiter-engine:${Vers.junit}"
+    const val junitParams = "org.junit.jupiter:junit-jupiter-params:${Vers.junit}"
 
     const val jacksonKotlin = "com.fasterxml.jackson.module:jackson-module-kotlin:${Vers.jacksonKotlin}"
     const val postgres = "org.postgresql:postgresql:${Vers.postgres}"

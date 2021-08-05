@@ -1,3 +1,4 @@
 rootProject.name = "pokerman"
 
-include("pokerman")
+include("pokerman:texas-holdem")
+include("pokerman:spring-boot-server")
