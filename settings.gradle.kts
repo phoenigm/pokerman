@@ -1,3 +1,3 @@
-rootProject.name = "poker-chpoker"
+rootProject.name = "pokerman"
 
-include("poker-chpoker")
+include("pokerman")

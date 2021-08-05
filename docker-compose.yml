@@ -2,30 +2,30 @@ version: '3'
 
 services:
 
-  poker-chpoker:
-    container_name: poker-chpoker
+  pokerman:
+    container_name: pokerman
     restart: always
     build:
-      context: ./poker-chpoker
-    hostname: poker-chpoker
+      context: ./pokerman
+    hostname: pokerman
     ports:
       - 20000:20000
     networks:
       - backend
 
-  db-poker-chpoker:
-    container_name: poker-chpoker
+  db-pokerman:
+    container_name: pokerman
     restart: always
     image: postgres:12.2-alpine
-    hostname: poker-chpoker
+    hostname: pokerman
     volumes:
-      - db-poker-chpoker:/var/lib/postgresql/data:delegated
+      - db-pokerman:/var/lib/postgresql/data:delegated
     ports:
       - 5432:5432
     environment:
-      - POSTGRES_USER=poker-chpoker
-      - POSTGRES_PASSWORD=poker-chpoker
-      - POSTGRES_DB=poker-chpoker
+      - POSTGRES_USER=pokerman
+      - POSTGRES_PASSWORD=pokerman
+      - POSTGRES_DB=pokerman
     networks:
       - backend
 
@@ -34,4 +34,4 @@ networks:
   frontend:
 
 volumes:
-  db-poker-chpoker:
+  db-pokerman:
